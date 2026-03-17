@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Vendas</title>
+    <link rel="stylesheet" href="Vetor.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro de Vendas</h1>
+
+        <input 
+            type="text" 
+            id="vendedor" 
+            placeholder="Nome do vendedor"
+        >
+
+        <input 
+            type="number" 
+            id="valor" 
+            placeholder="Valor da venda"
+        >
+
+        <br><br>
+
+        <button type="button" onclick="cadastrarVenda()">Cadastrar</button>
+        <button type="button" onclick="removerUltimo()">Remover Último</button>
+        <button type="button" onclick="limparTudo()">Limpar Tudo</button>
+
+        <br><br>
+
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Vendedor</th>
+                    <th>Valor</th>
+                    <th>Desconto</th>
+                    <th>Total</th>
+                    <th>Data</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody id="tabela">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="vetor.js"></script>
+</body>
+</html>
